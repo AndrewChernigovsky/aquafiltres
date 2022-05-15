@@ -6,6 +6,7 @@
 //import Accordion from './components/accordion';
 
 import swiperSlider from './components/slider';
+import swiperSliderProducts from './components/products/slider-product';
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
 
@@ -15,6 +16,7 @@ import tabs from './components/tabs';
     //const accordions = new Accordion();
     burgerMenu.init();
     swiperSlider.init();
+    swiperSliderProducts.init();
     tabs.init();
   });
 })(jQuery);
