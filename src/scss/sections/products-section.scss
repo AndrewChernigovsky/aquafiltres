@@ -377,3 +377,32 @@
         row-gap: 2rem;
     }
 }
+
+.products-tabs-slide {
+    &__wrapper {
+        max-width: 50%;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+        color: $basicblue5;
+    }
+
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: 'mplus_r';
+    }
+}
+.m-b-2 {
+    margin-bottom: 2rem;
+}
+
+.products-card-tab {
+    min-height: 500px;
+
+    &__attention {
+        color: $basicgray;
+    }
+}   

@@ -1,0 +1,50 @@
+.feedback {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 500px;
+
+    &__wrapper {
+        min-width: 50%;
+        min-width: 45%;
+        border: 1px solid $basicblue5;
+        padding: 2rem;
+        border-radius: 12px;
+        min-height: 400px;
+
+        &:nth-of-type(2) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__image {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 1px solid $basicblue5;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        a {
+            color: $basicblue5;
+
+            &:hover {
+                transition: 0.3s ease;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__feed-about {
+        margin-bottom: 5rem;
+    }
+}
