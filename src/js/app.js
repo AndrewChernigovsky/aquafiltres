@@ -22,14 +22,18 @@ import tabs from './components/tabs';
       slidesPerView: 4,
       loop: false,
       freeMode: true,
-      loopedSlides: 5, //looped slides should be the same
+      loopedSlides: 5,
       watchSlidesProgress: true,
     });
     var galleryTop = new Swiper('.gallery-top', {
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true,
-      loopedSlides: 5, //looped slides should be the same
+      loopedSlides: 5,
+      zoom: {
+        maxRatio: 3,
+        minRatio: 1,
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
