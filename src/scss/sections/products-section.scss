@@ -124,6 +124,25 @@
         overflow: hidden;
     }
 
+    &__item-inner-slider {
+        min-width: 300px;
+    }
+
+    &__item-inner-card {
+        border: 1px solid transparent;
+        align-items: flex-start;
+
+        .products__item-about {
+            position: static;
+        }
+
+        .product-filter__title-inner {
+            font-size: 1.6rem;
+            justify-items: left;
+            text-align: left;
+        }
+    }
+
     &__item {
         min-height: 500px;
         position: relative;
@@ -324,7 +343,9 @@
     }
 
     &__wrapper {
-        max-width: min-content;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 30px;
     }
 }
 

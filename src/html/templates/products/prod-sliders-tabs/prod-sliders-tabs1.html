@@ -1,0 +1,25 @@
+<div class="tabs js-tabs products container">
+    <ul class="tabs__header products__header">
+        <li data-tab="tab-one" class="products__tabs-btn tabs__btn active">Фильтры для дома и офиса</li>
+        <li data-tab="tab-two" class="products__tabs-btn tabs__btn">Полупромышленные Фильтры</li>
+        <li data-tab="tab-three" class="products__tabs-btn tabs__btn">Катриджи для фильтров</li>
+        <li data-tab="tab-forth" class="products__tabs-btn tabs__btn">Запасные детали</li>
+        <li data-tab="tab-fifth" class="products__tabs-btn tabs__btn">Диспенсеры</li>
+    </ul>
+
+    <div class="products__tabs tabs__content active" data-content="tab-one">
+        @@include('../blocks/products-list/products-list.html')
+    </div>
+    <div class="products__tabs tabs__content" data-content="tab-two">
+        @@include('../blocks/products-list/products-list2.html')
+    </div>
+    <div class="products__tabs tabs__content" data-content="tab-three">
+        @@include('../blocks/products-list/products-list3.html')
+    </div>
+    <div class="products__tabs tabs__content" data-content="tab-forth">
+        @@include('../blocks/products-list/products-list4.html')
+    </div>
+    <div class="products__tabs tabs__content" data-content="tab-fifth">
+        @@include('../blocks/products-list/products-list5.html')
+    </div>
+</div>

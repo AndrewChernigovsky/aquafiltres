@@ -6,6 +6,7 @@
 //import Accordion from './components/accordion';
 
 import swiperSlider from './components/slider';
+import swiperSliderProductsPreview  from './components/products/slider-product-preview';
 import swiperSliderProducts from './components/products/slider-product';
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
@@ -16,7 +17,27 @@ import tabs from './components/tabs';
     //const accordions = new Accordion();
     burgerMenu.init();
     swiperSlider.init();
-    swiperSliderProducts.init();
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      loop: false,
+      freeMode: true,
+      loopedSlides: 5, //looped slides should be the same
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
     tabs.init();
   });
 })(jQuery);
