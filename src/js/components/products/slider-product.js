@@ -26,7 +26,7 @@ const swiperSliderProducts = (() => {
       thumbs: {
           swiper: {
               el: '.product-preview-slider',
-              slidersPerview: 5,
+              slidesPerView: 5,
             }
         },
     });
