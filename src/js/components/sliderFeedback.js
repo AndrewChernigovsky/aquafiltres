@@ -6,7 +6,7 @@ const swiperSliderFeedback = (() => {
       loop: true,
       centeredSlides: true,
       autoplay: {
-        delay: 3000,
+        delay: 300000,
         disableOnInteraction: false,
       },
       centerInsufficientSlides: true,
