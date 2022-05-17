@@ -3,9 +3,8 @@
 // This file will be compiled into app.js and will not be minified.
 // Feel free with using ES6 here.
 
-//import Accordion from './components/accordion';
-
-import swiperSlider from './components/slider';;
+import Accordion from './components/accordion';
+import swiperSlider from './components/slider';
 import swiperSliderFeedback from './components/sliderFeedback';
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
@@ -17,6 +16,7 @@ import tabs from './components/tabs';
     burgerMenu.init();
     swiperSlider.init();
     swiperSliderFeedback.init();
+    const accordions = new Accordion();
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 10,
       slidesPerView: 4,

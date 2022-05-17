@@ -2,31 +2,51 @@
     position: relative;
     height: 300px;
 
-    &::after {
-        position: absolute;
-        content: '';
-        display: block;
-        background-color: $basicblue5;
-        opacity: 0.2;
-        z-index: 1;
-        min-width: 100%;
-        height: 100%;
-        bottom: 0;
-        left: 0;
-    }
-
     &__wrapper {
         overflow: hidden;
         height: 300px;
         position: relative;
+       
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $white;
+        text-shadow: 1px 1px 2px $black;
+        margin-bottom: 2rem;
+        min-width: max-content;
+        word-break: break-word;
+    }
+
+    &__subtitle {
+        color: $basicorange;
+        text-shadow: 1px 1px 2px $black;
+    }
+
+    &__title-attention {
+        color: $basicgreen1;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 1px 1px 2px $black;
+        margin-bottom: 2rem;
     }
 
     &__slide {
         text-align: center;
-    }
 
-    &__slide {
-        text-align: center;
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            background-color: $black;
+            opacity: 0.5;
+            z-index: 1;
+            min-width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    
     }
 
     &__text {
@@ -37,15 +57,9 @@
         align-items: center;
         height: inherit;
         min-width: 100%;
+
     }
 
     &__text-wrapper {
-        
-    }
-
-    &__title-attention {
-        color: $white;
-        font-size: 3rem;
-        text-align: center;
-    }
+     }
 }

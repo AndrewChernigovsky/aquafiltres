@@ -1,0 +1,23 @@
+.accordion {
+  
+    &__head,
+    &__title {
+        border: 1px solid transparent;
+   }
+
+   &__title {
+       color: $basicorange;
+       text-align: center;
+
+       &:hover,
+       &.active {
+           background-color: transparent;
+       }
+   }
+
+   &__content {
+       background-color: transparent;
+       border: 1px solid transparent;
+       box-shadow: none;
+   }
+}
