@@ -6,9 +6,11 @@ const swiperSlider = (() => {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false,
     },
+    preloadImages: false,
+    lazy: true,
     centerInsufficientSlides: true,
     effect: 'fade',
     fadeEffect: {
