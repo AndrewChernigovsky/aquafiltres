@@ -29,13 +29,13 @@
 
     &__title-attention {
         color: $basicgreen1;
-        font-size: 3rem;
+        font-size: 5rem;
         text-align: center;
         text-shadow: 1px 1px 2px $black;
         margin-bottom: 2rem;
 
         @include media('<=tablet') {
-            font-size: 2rem;
+            font-size: 5rem;
         }
     }
 

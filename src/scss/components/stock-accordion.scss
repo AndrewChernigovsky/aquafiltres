@@ -56,6 +56,13 @@
     @include media('<=tablet') {
         max-width: 100%;
     }
+    .green {
+        font-size: 1.6rem;
+
+        @include media('<=tablet') {
+            font-size: 1.2rem;
+        }
+    }
    }
 
    &__content {
