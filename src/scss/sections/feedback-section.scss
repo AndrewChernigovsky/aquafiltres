@@ -77,6 +77,10 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         margin-bottom: 3rem;
+
+        @include media('<=tablet') {
+            grid-template-columns: 1fr;
+        }  
     }
 
     &__allfeed-block {
