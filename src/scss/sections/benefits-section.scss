@@ -5,6 +5,11 @@
     }
   }
 
+  &__main-title {
+    color: $basicblue5;
+    margin-bottom: 2rem;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -20,16 +25,21 @@
   }
 
   &__wrapper {
-    background-color: $aliceblue;
+    background-color: transparent;
+    border: 1px solid $basicblue5;
     padding: 10px;
     position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
   }
 
   &__image {
 
     svg {
       position: absolute;
-      top: -5px;
+      top: -15px;
       left: -5px;
     }
   }
