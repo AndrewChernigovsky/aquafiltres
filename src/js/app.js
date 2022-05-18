@@ -6,6 +6,7 @@
 import Accordion from './components/accordion';
 import swiperSlider from './components/slider';
 import swiperSliderFeedback from './components/sliderFeedback';
+import swiperSliderStock from './components/sliderStock';
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
 
@@ -16,6 +17,7 @@ import tabs from './components/tabs';
     burgerMenu.init();
     swiperSlider.init();
     swiperSliderFeedback.init();
+    swiperSliderStock.init();
     const accordions = new Accordion();
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 10,
