@@ -9,6 +9,7 @@ import swiperSliderFeedback from './components/sliderFeedback';
 import swiperSliderStock from './components/sliderStock';
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
+import scrollSmooth from './components/scroll-smooth';
 
 (($) => {
   // When DOM is ready
@@ -19,31 +20,7 @@ import tabs from './components/tabs';
     swiperSliderFeedback.init();
     swiperSliderStock.init();
     const accordions = new Accordion();
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      loop: false,
-      freeMode: true,
-      loopedSlides: 5,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      loopedSlides: 5,
-      zoom: {
-        maxRatio: 3,
-        minRatio: 1,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs,
-      },
-    });
     tabs.init();
+    scrollSmooth.init();
   });
 })(jQuery);
