@@ -13,7 +13,7 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10%;
+    gap: 20px;
 
     @include media('<=desktop') {
       grid-template-columns: 1fr 1fr;
@@ -27,25 +27,53 @@
   &__wrapper {
     background-color: transparent;
     border: 1px solid $basicblue5;
-    padding: 10px;
-    position:relative;
+    padding: 20px 10px;
+    position: relative;
+    min-height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    opacity: 1;
+    animation: myAnim 30s ease 4s infinite alternate forwards;
   }
 
   &__image {
 
     svg {
       position: absolute;
-      top: -15px;
-      left: -5px;
+      top: 0;
+      left: -3px;
+      width: 75px;
+      height: 75px;
+
+      fill:  $basicblue5;
     }
   }
 
   &__text {
     text-align: center;
     padding-left: 20px;
+    color: $basicblue5;
   }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
 }
