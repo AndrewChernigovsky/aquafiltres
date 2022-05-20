@@ -346,6 +346,11 @@
         display: grid;
         grid-template-columns: 400px 1fr;
         gap: 30px;
+
+        @include media("<=tablet") {
+            grid-template-columns: 80%;
+            justify-content: center;
+        }
     }
 }
 
