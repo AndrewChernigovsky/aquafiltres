@@ -113,7 +113,7 @@
     }
 
     &__item-inner {
-        min-height: 400px;
+        min-height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -367,6 +367,7 @@
 
         p {
             font-size: 2rem;
+            font-family: 'mplus_r';
         }
     }
 
@@ -375,16 +376,32 @@
         line-height: 1px;
         display: grid;
         row-gap: 2rem;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     &__cost {
-        display: flex;
+        display: grid;
         align-items: center;
         
         .old-cost {
-            margin-left: 2rem;
             font-size: 1.5rem;
+            text-decoration: line-through;
+            color: $red;
+            font-weight: 400;
         }
+    }
+
+    &__card-cost {
+        margin: 0;
+        color: $basicblue4;
+    }
+
+    &__card-btn {
+        max-width: 200px;
+        min-width: 200px;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 }
 
