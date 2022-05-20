@@ -73,3 +73,21 @@
   .products-slider-main {
       max-width: 300px;
   }
+
+  .products-slider-thumb {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+
+    &__item {
+      display: flex;
+
+      a {
+        display: none;
+      }
+    }
+
+    &__image {
+      width: 30%;
+    }
+  }

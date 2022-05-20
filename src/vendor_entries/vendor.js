@@ -7,6 +7,8 @@ module.exports = {
     // './node_modules/validate.js/validate.js',
     './node_modules/swiper/swiper-bundle.min.js',
 
+    './node_modules/fancybox/script.min.js',
+
     //select choices
     //'./node_modules/choices.js/public/assets/scripts/choices.min.js',
 
