@@ -376,6 +376,16 @@
         display: grid;
         row-gap: 2rem;
     }
+
+    &__cost {
+        display: flex;
+        align-items: center;
+        
+        .old-cost {
+            margin-left: 2rem;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .products-tabs-slide {
