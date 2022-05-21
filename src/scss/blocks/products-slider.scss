@@ -7,6 +7,10 @@
     &__wrapper {
         min-height: 300px;
         min-width: max-content;
+
+        @include media('<=tablet') {
+            min-width: auto;
+        }
     }
 
     &__slide {
@@ -30,17 +34,15 @@
 }
 
 .gallery-top {
-    // height: 80%;
-    // width: 100%;
-
     min-height: 350px;
     min-width: 400px;
-
     width: 100%;
     margin-left: 0;
     overflow: hidden;
 
-
+    @include media('<=tablet') {
+        min-width: 280px;
+    }
   }
 
   .gallery-thumbs {
@@ -84,9 +86,17 @@
     max-width: 100%;
     justify-content: space-between;
     min-width: 400px;
+
+    @include media('<=tablet') {
+        min-width: 280px;
+    }
     
     &__item {
       display: flex;
+
+      @include media('<=tablet') {
+        width: 80px;
+    }
 
       a {
         display: none;

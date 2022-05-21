@@ -23,12 +23,20 @@ import scrollSmooth from './components/scroll-smooth';
     tabs.init();
     scrollSmooth.init();
     var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 20,
-      slidesPerView: 4,
       loop: false,
       freeMode: true,
       loopedSlides: 4, //looped slides should be the same
       watchSlidesProgress: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      }
     });
     var galleryTop = new Swiper('.gallery-top', {
       spaceBetween: 10,
