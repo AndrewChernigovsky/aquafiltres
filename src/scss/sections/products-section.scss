@@ -110,6 +110,17 @@
             grid-template-columns: 1fr;
             gap: 15px;
         }
+
+        &.advice-list {
+            display: flex;
+            gap: 50px;
+            justify-content: flex-start;
+
+            @include media("<=widescreen") {
+                display: flex;
+                gap: 50px;
+            }
+        }
     }
 
     &__item-inner {
@@ -122,6 +133,11 @@
         text-align: center;
         border: 1px solid $cyan;
         overflow: hidden;
+
+        &.advice-item-inner {
+            min-height: 300px;
+            margin-bottom: 1rem;
+        }
     }
 
     &__item-inner-slider {
@@ -260,6 +276,17 @@
                         top: 2px;
                     }
                 }
+            }
+        }
+
+        &.advice-item {
+            min-width: 30%;
+            max-height: 300px;
+            min-height: 200px;
+
+            .products__item-about,
+            .products__item-cost {
+                display: none;
             }
         }
     }

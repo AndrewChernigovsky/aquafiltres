@@ -1,0 +1,9 @@
+.products-advice-section {
+    overflow-x: scroll;
+    height: 450px;
+
+    &__inner {
+        max-height: 400px;
+        padding: 1rem;
+    }
+}
