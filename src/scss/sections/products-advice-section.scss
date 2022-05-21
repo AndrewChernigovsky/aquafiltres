@@ -1,6 +1,15 @@
 .products-advice-section {
-    overflow-x: scroll;
+    
     height: 450px;
+
+    .container {
+        overflow: hidden;
+    }
+
+    &__wrapper {
+        overflow-x: scroll;
+        min-height: 400px;
+    }
 
     &__inner {
         max-height: 400px;
