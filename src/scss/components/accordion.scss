@@ -113,6 +113,37 @@
     .icon {
       fill:$black
     }
+    .accordion__head {
+      text-align: left;
+      margin: 0;
+    }
+
+    .accordion__btn {
+      z-index: -1;
+      width: 10px;
+      padding-right: 20px;
+      margin-left: -20px;
+    }
+
+    .accordion__title {
+      z-index: 1;
+      padding-right: 3rem;
+      font-family: $primary-font;
+      font-size: 2rem;
+      font-weight: 400;
+      color: $basicblue5;
+    }
+
+    .accordion__descr {
+      font-family: $primary-font;
+      max-width: 100%;
+    }
   }
 }
 
+.questions-accordion-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: $basicblue5;
+}
