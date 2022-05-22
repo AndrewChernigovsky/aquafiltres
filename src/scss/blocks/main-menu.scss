@@ -19,6 +19,8 @@
   }
 
   &__nav-item {
+    position: relative;
+
     a,
     a > span {
       position: relative;
@@ -87,5 +89,41 @@
     font-size: 1.6rem;
     color: $basicblue5;
     padding-bottom: 0;
+  }
+
+  &__nav-item-company {
+    &:hover {
+        .menu__nav-company-list {
+            min-height: 220px;
+            opacity: 1;
+            display: block;
+            transition: 0.5s ease;
+        }
+    }
+  }
+
+  &__nav-company-list {
+    position: absolute;
+    min-width: calc(100% + 100px);
+    background-color: $white;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.51);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.51);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.51);
+    border-radius: 0px 0px 15px 15px;
+    min-height: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  &__nav-company-list-wrapper {
+    margin-top: -80px;
+  }
+
+  &__nav-company-link {
+    // margin-left: 1rem;
   }
 }

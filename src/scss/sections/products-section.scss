@@ -137,6 +137,7 @@
         &.advice-item-inner {
             min-height: 300px;
             margin-bottom: 1rem;
+            border: 1px solid transparent;
         }
     }
 
@@ -361,6 +362,7 @@
         display: grid;
         grid-template-columns: 400px 1fr;
         gap: 30px;
+        max-height: 440px;
 
         @include media("<=tablet") {
             grid-template-columns: 80%;
@@ -420,6 +422,12 @@
             text-decoration: line-through;
             color: $red;
             font-weight: 400;
+            font-family: $primary-font;
+        }
+
+        .p-f {
+            font-weight: 600;
+            font-size: 2rem;
         }
     }
 
@@ -439,11 +447,11 @@
         text-align: left;
         align-items: flex-end;
         display: flex;
-        color: $basicorange;
+        color: $basicblue4;
         margin-bottom: 1rem;
 
         svg {
-            fill: $basicorange;
+            fill: $basicblue4;
             margin-bottom: -2px;
         }
 
