@@ -6,7 +6,7 @@ const swiperSlider = (() => {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 60000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     preloadImages: false,
@@ -14,13 +14,16 @@ const swiperSlider = (() => {
     centerInsufficientSlides: true,
     effect: 'fade',
     fadeEffect: {
-      crossFade: true
+      crossFade: true,
     },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
     },
+    observer: true,
+    observeSlideChildren: true,
+    observeParents: true,
   });
 
   const init = () => {};
@@ -28,7 +31,6 @@ const swiperSlider = (() => {
   return {
     init,
   };
-
 })();
 
 export default swiperSlider;

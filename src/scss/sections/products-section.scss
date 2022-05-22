@@ -244,23 +244,11 @@
         &.js-item-off {
             
             .products__item-inner {
-                opacity: 0.8;
-
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    background-color: $basicblue4;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    opacity: 0.2;
-                }
+                opacity: 1;
             }
                 
             .products__item-cost {
-                opacity: 0.8;
+                opacity: 1;
                 color: $basicblue4;
                 span {
                     position: relative;
