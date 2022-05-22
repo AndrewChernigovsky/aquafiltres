@@ -11,7 +11,9 @@
 
   &__inner {
     min-height: 100px;
-
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
     @include media('<=desktop') {
       display: flex;
       min-width: 100%;

@@ -107,3 +107,12 @@
     padding-left: 10px;
   }
 }
+
+.accordion {
+  &-wrap.questions-accordion {
+    .icon {
+      fill:$black
+    }
+  }
+}
+
