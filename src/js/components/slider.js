@@ -6,7 +6,7 @@ const swiperSlider = (() => {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 500000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     preloadImages: false,
