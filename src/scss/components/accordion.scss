@@ -120,9 +120,16 @@
 
     .accordion__btn {
       z-index: -1;
-      width: 10px;
+      width: 20px;
       padding-right: 20px;
+      padding-left: 10px;
       margin-left: -20px;
+      cursor: pointer;
+
+      svg {
+        margin-left: -10px;
+        fill: $basicblue4;
+      }
     }
 
     .accordion__title {
@@ -132,11 +139,26 @@
       font-size: 2rem;
       font-weight: 400;
       color: $basicblue5;
+      text-align: left;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      @include media("<=tablet") {
+        font-size: 1.5rem;
+      }
     }
 
     .accordion__descr {
       font-family: $primary-font;
       max-width: 100%;
+    }
+
+    .accordion__content {
+      p {
+        @include media("<=tablet") {
+          font-size: 1.3rem;
+        }
+      }
     }
   }
 }
@@ -146,4 +168,59 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   color: $basicblue5;
+}
+
+.stock-accordion {
+  .icon {
+    fill:$black
+  }
+  .accordion__head {
+    text-align: left;
+  }
+
+  .accordion__btn {
+    z-index: -1;
+    width: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-left: -20px;
+    cursor: pointer;
+
+    svg {
+      margin-left: -10px;
+      fill: $basicblue4;
+    }
+  }
+
+  .accordion__title {
+    z-index: 1;
+    padding-right: 3rem;
+    font-family: $primary-font;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $white;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    @include media("<=tablet") {
+      font-size: 1.5rem;
+    }
+  }
+
+  .accordion__content {
+    p,
+    span {
+      color: $white;
+      font-family: $primary-font;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
 }

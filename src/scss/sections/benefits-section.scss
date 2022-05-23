@@ -12,7 +12,7 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 
     @include media('<=desktop') {
@@ -35,7 +35,6 @@
     align-items: center;
     border-radius: 15px;
     opacity: 1;
-    animation: myAnim 30s ease 4s infinite alternate forwards;
   }
 
   &__image {
@@ -55,6 +54,7 @@
     text-align: center;
     padding-left: 20px;
     color: $basicblue5;
+    font-size: 1.5rem;
   }
 
   &__item {
@@ -63,17 +63,4 @@
     padding-right: 50px;
     padding-left: 50px;
   }
-}
-
-@keyframes myAnim {
-	0%,
-	50%,
-	100% {
-		opacity: 1;
-	}
-
-	25%,
-	75% {
-		opacity: 0;
-	}
 }

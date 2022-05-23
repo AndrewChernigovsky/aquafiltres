@@ -40,33 +40,30 @@
     &__filter {
         position: absolute;
         top: 115px;
-        left: -280px;
+        right: -105%;
         z-index: 1;
         width: max-content;
 
         @include media('>=widescreen-lg') {
             top: 0;
-            left: -860px;
+            right: -150%;
         }
 
         @include media('<=desktop') {
             top: 110px;
-            left: -150px;
+            right: -55%;
         }
 
         @include media('<=tablet') {
             top: 5px;
             left: auto;
-            right: 65%;
+            right: 5%;
         }
 
         @include media('<=phone-lg') {
-            // top: 40px;
-            // left: auto;
-            // right: 20%;
             top: 135px;
             left: auto;
-            right: 18%;
+            right: 40%;
         }
 
         img {
@@ -114,7 +111,7 @@
         padding: 20px;
         position: absolute;
         margin-top: 20px;
-        right: 80px;
+        left: 0;
 
         @include media('<=tablet') {
             right: 0;
@@ -132,36 +129,33 @@
             padding: 20px;
             margin-top: 0;
             border-radius: 15%;
-
             left: 0;
             top: 0;
+        }
+
+        .animated-button1 {
+            margin-left: 0;
         }
     }
 
     &__block {
-        max-width: 75%;
+        max-width: 1280px;
         margin: 0 auto;
+        padding: 0;
+        position: relative;
     }
 
     &__text {
         position: absolute;
         margin: 0 auto;
         z-index: 6;
-        text-align: right;
+        text-align: left;
+        left: 0;
         min-width: 300px;
         word-break: break-word;
         max-height: 330px;
         color: $white;
-
-        @include media('<=tablet') {
-            min-width: auto;
-            max-width: 280px;
-            right: 25px;
-
-            .f-b3 {
-                font-size: 1.4rem;
-            }
-        }
+        padding-left: 2rem;
 
         .f-b3 {
             text-shadow: 1px 1px 1px $black;
@@ -171,6 +165,34 @@
 
         .f-w-100 {
             font-weight: 100;
+        }
+
+        @include media('<=tablet') {
+            min-width: auto;
+            max-width: 280px;
+            left: 0;
+
+            .f-b3 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__inner-main {
+        
+        @include media("<=tablet") {
+            bottom: -503px;
+        }
+    }
+
+    &__inner-main2 {
+        
+        @include media("<=tablet") {
+            bottom: -435px;
+
+            .swiper-main__text {
+                padding-left: 0;
+            }
         }
     }
 
@@ -279,8 +301,7 @@
 }
 
 .quality-inner {
-    right: 80px;
-    left: auto; 
+    left: 0; 
 
     @include media('<=desktop') {
         right: auto;
@@ -289,7 +310,7 @@
 }
 
 .quality-text {
-    text-align: right;
+    text-align: left;
 
     .animated-button1 {
         margin-left: 0;
@@ -324,9 +345,9 @@
 
 .quality-list {
     position: absolute;
-    bottom: 80px;
+    bottom: -500px;
     z-index: 2;
-    right: 78px;
+    left: 0;
     display: grid;
 
     @include media('<=desktop') {
