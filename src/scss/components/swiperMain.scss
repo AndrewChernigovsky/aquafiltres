@@ -88,6 +88,18 @@
         }
     }
 
+    &__slide {
+        video {
+            display: none;
+        }
+    }
+
+    &__slide.swiper-slide-active {
+        video {
+            display: block;
+        }
+    }
+
     &__slide-wrapper {
         max-width: 100%;
         max-height: 400px;

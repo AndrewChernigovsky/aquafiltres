@@ -24,6 +24,27 @@ const swiperSlider = (() => {
     observer: true,
     observeSlideChildren: true,
     observeParents: true,
+
+    // on: {
+    //   init: function (){
+    //     let activeSlide = swiper.activeIndex;
+    //     const video = document.querySelector('.video-swiper')
+
+    //     if(activeSlide) {
+    //       video.style.display = "block"
+    //     } else {
+    //       video.style.display = "none"
+    //     }
+    //   },
+
+    //   sliderChange: function() {
+    //     if(activeSlide) {
+    //       video.style.display = "block"
+    //     } else {
+    //       video.style.display = "none"
+    //     }
+    //   }
+    // }
   });
 
   const init = () => {};
