@@ -19,6 +19,12 @@
         background-position: center;
         max-width: 100%;
     }
+
+    &__image {
+      &.swiper-zoom-container {
+        width: 360px;
+      }
+    }
 }
 
 .swiper {
@@ -107,3 +113,6 @@
       width: 30%;
     }
   }
+
+
+  
