@@ -8,7 +8,7 @@
         min-height: 300px;
         min-width: max-content;
 
-        @include media('<=tablet') {
+        @include media("<=tablet") {
             min-width: auto;
         }
     }
@@ -21,13 +21,13 @@
     }
 
     &__image {
-      &.swiper-zoom-container {
-        width: 360px;
+        &.swiper-zoom-container {
+            width: 360px;
 
-        img {
-          width: 100%;
+            img {
+                width: 100%;
+            }
         }
-      }
     }
 }
 
@@ -36,9 +36,9 @@
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     background-size: cover;
     background-position: center;
 }
@@ -50,12 +50,12 @@
     margin-left: 0;
     overflow: hidden;
 
-    @include media('<=tablet') {
+    @include media("<=tablet") {
         min-width: 280px;
     }
-  }
+}
 
-  .gallery-thumbs {
+.gallery-thumbs {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
@@ -67,9 +67,9 @@
     &.swiper-wrapper {
         height: auto;
     }
-  }
+}
 
-  .gallery-thumbs .swiper-slide {
+.gallery-thumbs .swiper-slide {
     height: 100%;
     opacity: 0.4;
 
@@ -79,47 +79,46 @@
         display: block;
         height: auto;
     }
-  }
+}
 
-  .gallery-thumbs .swiper-slide-thumb-active {
+.gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
-  }
+}
 
-  .products-preview.swiper-slide {
-      width: 100px;
-  }
+.products-preview.swiper-slide {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
 
-  .products-slider-main {
-      max-width: 300px;
-  }
+.products-slider-main {
+    max-width: 300px;
+}
 
-  .products-slider-thumb {
+.products-slider-thumb {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
     min-width: 400px;
 
-    @include media('<=tablet') {
+    @include media("<=tablet") {
         min-width: 280px;
     }
-    
+
     &__item {
-      display: flex;
-      align-self: center;
+        display: flex;
+        align-self: center;
 
-      @include media('<=tablet') {
-        width: 80px;
-    }
+        @include media("<=tablet") {
+            width: 80px;
+        }
 
-      a {
-        display: none;
-      }
+        a {
+            display: none;
+        }
     }
 
     &__image {
-      width: 30%;
+        width: 30%;
     }
-  }
-
-
-  
+}

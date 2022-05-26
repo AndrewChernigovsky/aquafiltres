@@ -227,6 +227,15 @@
                 
                 span {
                     position: relative;
+
+                    &:first-of-type {
+                        display: block;
+                    }
+
+                    &:last-of-type {
+                        display: none;
+                    }
+
                     &::after {
                         content: '';
                         display: block;
@@ -253,6 +262,15 @@
                 color: $basicblue4;
                 span {
                     position: relative;
+
+                    &:last-of-type {
+                        display: block;
+                    }
+
+                    &:first-of-type {
+                        display: none;
+                    }
+
                     &::after {
                         content: '';
                         display: block;
@@ -479,6 +497,19 @@
 
     &__card-formBtn {
         min-width: 100%;
+    }
+
+    &.cost-active {
+        span {
+
+            &:first-child {
+                display: block;
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
     }
 }
 
