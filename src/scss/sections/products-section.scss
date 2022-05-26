@@ -124,7 +124,7 @@
     }
 
     &__item-inner {
-        min-height: 500px;
+        min-height: 405px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -166,6 +166,7 @@
         text-align: center;
 
         &.js-item-on {
+
             &:hover {
                 .products__item-inner {
                     opacity: 0.8;
@@ -244,8 +245,8 @@
                         background-color: $basicgreen1;
                         border-radius: 50%;
                         position: absolute;
-                        right: -30px;
-                        top: 2px;
+                        right: 65px;
+                        top: 1px;
                     }
                 }
             }
@@ -390,6 +391,12 @@
 }
 
 .product-filter {
+
+    h3 {
+        line-height: 1.4;
+        height: 50px;
+    }
+
     &__image {
         position: absolute;
         top: 0;
@@ -403,7 +410,7 @@
         grid-template-rows: min-content min-content;
         row-gap: 10px;
         font-size: 1.2rem;
-        margin-bottom: 30px; 
+        margin-bottom: 15px; 
 
         h3 {
             @include media('<=tablet') {
@@ -447,6 +454,7 @@
             font-weight: 600;
             font-size: 2rem;
         }
+
     }
 
     &__card-cost {
@@ -537,7 +545,6 @@
 .m-b-2 {
     margin-bottom: 2rem;
 }
-
 .products-card-tab {
     min-height: 500px;
 
