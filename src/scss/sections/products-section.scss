@@ -395,7 +395,7 @@
 
     h3 {
         line-height: 1.4;
-        height: 50px;
+        min-height: 50px;
     }
 
     &__image {
@@ -404,13 +404,17 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
+
+    &__title {
+        padding: 0 1rem;
+    }
     
     &__title-inner {
         display: grid;
         max-height: min-content;
         grid-template-rows: min-content min-content;
         row-gap: 10px;
-        padding: 0 1rem;
+        
         font-size: 1.2rem;
         margin-bottom: 1rem;
 
@@ -425,9 +429,11 @@
         font-size: 1.2rem;
         line-height: 1px;
         display: grid;
-        row-gap: 2rem;
         justify-content: center;
         text-align: center;
+        row-gap: 1rem;
+        font-family: 'mplus_r';
+        font-weight: 600;
 
         &.product-filter__card-subtitle {
             justify-content: flex-start;

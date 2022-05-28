@@ -23,7 +23,7 @@
  *
  */
 
-(() => {
+ (() => {
   'use strict';
 
   const cfg = require('./gulp-config.js');

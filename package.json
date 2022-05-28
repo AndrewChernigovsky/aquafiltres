@@ -35,6 +35,7 @@
     "gulp-htmlhint": "^3.0.0",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^6.2.0",
+    "gulp-libsquoosh": "^1.1.2",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
