@@ -15,6 +15,7 @@ import scrollSmooth from './components/scroll-smooth';
   // When DOM is ready
   $(() => {
     //const accordions = new Accordion();
+    $.fancybox.open($('.gallery'));
     burgerMenu.init();
     swiperSlider.init();
     swiperSliderFeedback.init();

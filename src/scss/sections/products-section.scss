@@ -131,7 +131,7 @@
         border-radius: 5%;
         position: relative;
         text-align: center;
-        border: 1px solid $cyan;
+        border: 1px solid transparent;
         overflow: hidden;
 
         &.advice-item-inner {
@@ -400,7 +400,9 @@
 
     &__image {
         position: absolute;
-        top: 0;
+        top: 15px;
+        height: 300px;
+        object-fit: contain;
         left: 50%;
         transform: translate(-50%, 0);
     }
