@@ -1,6 +1,33 @@
 .aboutcompany-section {
     text-align: center;
 
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    &__image {
+        border-radius: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__block-title {
+        p {
+            font-size: 2rem;
+            font-family: $primary-font;
+            color: $basicblue5;
+
+            &:first-of-type {
+                font-weight: 700;
+            }
+
+            &:last-of-type {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     &__title {
         color: $basicblue5;
         margin-bottom: 2rem;
