@@ -134,6 +134,10 @@
         border: 1px solid transparent;
         overflow: hidden;
 
+        @include media("<=tablet") {
+            min-height: 250px;
+        }
+
         &.advice-item-inner {
             min-height: 300px;
             margin-bottom: 1rem;
@@ -143,6 +147,10 @@
 
     &__item-inner-slider {
         min-width: 300px;
+
+        @include media("<=tablet") {
+            padding-top: 50px;
+        }
     }
 
     &__item-inner-card {
@@ -228,6 +236,9 @@
                 
                 span {
                     position: relative;
+                    width: min-content;
+                    white-space: nowrap;
+                    margin: 0 auto;
 
                     &:first-of-type {
                         display: block;
@@ -245,7 +256,7 @@
                         background-color: $basicgreen1;
                         border-radius: 50%;
                         position: absolute;
-                        right: 65px;
+                        right: -20px;
                         top: 1px;
                     }
                 }
@@ -385,8 +396,9 @@
         padding-bottom: 100px;
 
         @include media("<=tablet") {
-            grid-template-columns: 80%;
+            grid-template-columns: 100%;
             justify-content: center;
+            padding-bottom: 1rem;
         }
     }
 }

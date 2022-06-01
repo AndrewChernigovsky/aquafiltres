@@ -24,6 +24,10 @@
         &.swiper-zoom-container {
             width: 360px;
 
+            @include media("<=tablet") {
+                width: auto;
+            }
+
             img {
                 width: 100%;
             }
