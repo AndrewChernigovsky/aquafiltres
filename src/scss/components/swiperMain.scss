@@ -88,18 +88,6 @@
         }
     }
 
-    &__slide {
-        video {
-            display: none;
-        }
-    }
-
-    &__slide.swiper-slide-active {
-        video {
-            display: block;
-        }
-    }
-
     &__slide-wrapper {
         max-width: 100%;
         max-height: 400px;
@@ -114,6 +102,14 @@
             top: 0;
             left: 0;
             opacity: 0.5;
+        }
+    }
+
+    &__slide {
+        &.swiper-slide-active {
+            video {
+                display: block;
+            }
         }
     }
 

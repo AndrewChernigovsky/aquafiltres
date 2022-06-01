@@ -1,9 +1,8 @@
 const swiperSliderQuality = (() => {
     const accountantInit = new Swiper('.quality-slider', {
-      slidesPerView: 4,
       spaceBetween: 20,
       speed: 800,
-      loop: false,
+      loop: true,
       autoplay: {
         delay: 10000,
         disableOnInteraction: false,
@@ -15,6 +14,17 @@ const swiperSliderQuality = (() => {
         type: 'bullets',
         clickable: true,
       },
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      }
     });
   
     const init = () => {};

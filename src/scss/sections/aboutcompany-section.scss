@@ -5,11 +5,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+
+        @include media("<=desktop") {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media("<=tablet") {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__image {
         border-radius: 15px;
         margin-bottom: 1.5rem;
+        width: 100%;
+        display: block;
     }
 
     &__block-title {

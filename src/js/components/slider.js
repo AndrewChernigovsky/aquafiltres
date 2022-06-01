@@ -26,23 +26,16 @@ const swiperSlider = (() => {
     observeParents: true,
 
     // on: {
-    //   init: function (){
-    //     let activeSlide = swiper.activeIndex;
-    //     const video = document.querySelector('.video-swiper')
+    //   slideChange(swiper) {
+    //     const slides = swiper.slides;
+    //     const activeSlideIndex = swiper.activeIndex;
+    //     const activeSlideNode = slides[activeSlideIndex];
+    //     const videoSrc = activeSlideNode.dataset.videoSrc;
+    //     const bindedTextSliders = Array.from(document.querySelectorAll(".swiper-main__slide"));
 
-    //     if(activeSlide) {
-    //       video.style.display = "block"
-    //     } else {
-    //       video.style.display = "none"
-    //     }
-    //   },
-
-    //   sliderChange: function() {
-    //     if(activeSlide) {
-    //       video.style.display = "block"
-    //     } else {
-    //       video.style.display = "none"
-    //     }
+    //     const foundText = bindedTextSliders.find(video => video.dataset.aciveSlider === videoSrc);
+    //     bindedTextSliders.forEach(video => video.removeAttribute("src"));
+    //     foundText.attr("src");
     //   }
     // }
   });
