@@ -224,3 +224,14 @@
     }
   }
 }
+
+.questions-accordion {
+  .accordion__descr {
+    @include media("<=tablet") {
+      padding: 0.5rem;
+    }
+  }
+  .accordion__head {
+    max-width: 100%;
+  }
+}

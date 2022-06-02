@@ -61,6 +61,21 @@
       align-items: flex-start;
     }
 
+    .o-1 {
+      padding-bottom: 1.5rem;
+    }
+
+    .menu__nav-company-list {
+      position: static;
+      border: none;
+      box-shadow: none;
+      display: block;
+      min-width: 100%;
+      text-align: center;
+      padding: 0;
+      opacity: 1;
+    }
+
     .animated-button1 {
       font-size: 1.6rem;
       padding: 25px 22px;

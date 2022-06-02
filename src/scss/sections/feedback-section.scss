@@ -10,6 +10,8 @@
         border-radius: 12px;
         min-height: 300px;
         position: relative;
+        background: rgb(12,3,95);
+        background: linear-gradient(45deg, rgba(12,3,95,1) 0%, rgba(4,54,175,1) 100%);
     }
 
     &__inner {
@@ -21,16 +23,18 @@
         width: 150px;
         height: 150px;
         object-fit: cover;
-        border: 1px solid $basicblue5;
+        border: 5px solid $white;
         margin: 0 auto;
         margin-bottom: 2rem;
     }
 
     &__title {
         margin-bottom: 2rem;
+        color: $white;
 
         a {
-            color: $basicblue5;
+            color: $white;
+            text-decoration: underline;
 
             &:hover {
                 transition: 0.3s ease;
@@ -44,12 +48,14 @@
         font-family: 'mplus_r';
         line-height: 1.2;
         font-size: 1.6rem;
+        color: $white;
     }
 
     &__data {
         position: absolute;
         bottom: 2rem;
         left: 2rem;
+        color: $white;
     }
 }
 
@@ -70,6 +76,15 @@
         justify-content: space-between;
         min-width: 60px;
         max-width: min-content;
+
+        .swiper-pagination-bullet {
+            background-color: transparent;
+            border: 1px solid $basicblue5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $basicblue5;
+        }
     }
 
     &__slide-item {
