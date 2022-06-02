@@ -1,0 +1,11 @@
+.quality-section {
+    &__title {
+        color: $basicblue5;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__inner-text {
+        text-transform: uppercase;
+    }
+}
