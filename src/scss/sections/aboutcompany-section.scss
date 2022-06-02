@@ -44,7 +44,8 @@
     }
 
     &__personal {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+        text-align: left;
     }
 
     &__text {
@@ -53,29 +54,107 @@
         font-family: $primary-font;
     }
 
+    &__quote {
+        background: rgb(12,3,95);
+        background: linear-gradient(45deg, rgba(12,3,95,1) 0%, rgba(4,54,175,1) 100%);
+        max-width: 400px;
+        padding: 2rem;
+        color: $white;
+        text-align: center;
+        line-height: 2;
+        border-radius: 10px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 50px;
+            right: -10px;
+            top: -20px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../images/icons/quote.png');
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 50px;
+            left: -10px;
+            bottom: -20px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../images/icons/quote.png');
+        }
+    }
+
     &__quality {
         display: flex;
         justify-content: space-between;
         font-family: $primary-font;
         min-height: min-content;
+        justify-items: center;
+
+        @include media("<=desktop") {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @include media("<=tablet") {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
     }
 
     &__quality-item {
-        border: 1px solid $basicblue5;
-        border-radius: 15px;
         padding: 2rem;
         min-height: inherit;
         flex-basis: 30%;
         text-align: left;
+        background: rgb(12,3,95);
+        background: linear-gradient(45deg, rgba(12,3,95,1) 0%, rgba(4,54,175,1) 100%);
+        max-width: 400px;
+        padding: 2rem;
+        color: $white;
+        line-height: 1.2;
+        border-radius: 10px;
+        outline: 2px solid $basicblue;
+        border: 2px solid $white;
 
         h3 {
             font-size: 2rem;
-            margin-bottom: 2rem;
         }
 
         p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
+    }
+
+    &__quality-item-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.aboutcompany-image {
+    margin-bottom: 2rem;
+}
+
+.qualitycompany-image {
+    fill: $white;
+    margin-left: 1rem;
+    svg {
+        width: 45px;
+        height: 45px;
     }
 }
