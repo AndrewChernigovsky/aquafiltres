@@ -35,6 +35,10 @@
     align-items: center;
     border-radius: 15px;
     opacity: 1;
+
+    @include media('<=tablet') {
+      padding: 0 0 0 10px;
+    }
   }
 
   &__image {
@@ -55,6 +59,14 @@
     padding-left: 20px;
     color: $basicblue5;
     font-size: 1.5rem;
+
+    @include media('<=desktop') {
+      font-size: 1.2rem;
+    }
+
+    @include media('<=tablet') {
+      font-size: 1rem;
+    }
   }
 
   &__item {

@@ -1,0 +1,96 @@
+.instroction-section {
+
+    &__wrapper {
+        padding: 2rem;
+        background: rgb(12,3,95);
+        background: linear-gradient(45deg, rgba(12,3,95,1) 0%, rgba(4,54,175,1) 100%);
+        border-radius: 10px;
+        outline: 2px solid $basicblue;
+        border: 2px solid $white;
+    }
+
+    &__heading {
+        color: $white;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        svg {
+            fill: $white;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        gap: 2rem;
+        row-gap: 4rem;
+    }
+
+    &__point {
+        display: grid;
+        gap: 2rem;
+       
+        min-width: 100%;
+
+        &.point1 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &.point2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        &.point3 {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 130px;
+        object-fit: contain;
+        height: 100px;
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        
+
+        svg {
+            position: absolute;
+            bottom: -30px;
+            left: 60px;
+        }
+
+        .point-image {
+            width: 100%;
+            display: block;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        color: $white;
+
+        h3 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-family: $primary-font;
+            font-size: 1.6rem;
+        }
+    }
+
+
+    &__result {
+        color: $white;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__hr {
+        height: 2px;
+        background-color: $white;
+        margin-bottom: 2rem;
+    }
+}

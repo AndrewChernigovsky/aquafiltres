@@ -25,7 +25,7 @@
             width: 360px;
 
             @include media("<=tablet") {
-                width: auto;
+                width: 70%;
             }
 
             img {

@@ -45,24 +45,35 @@
         width: max-content;
 
         @include media('>=widescreen-lg') {
-            top: 0;
+            top: 65px;
             right: -150%;
         }
 
+        @include media('<=widescreen-lg') {
+            top: 65px;
+            right: -150%;
+        }
+
+        @include media('<=widescreen') {
+            right: -110%;
+        }
+
         @include media('<=desktop') {
-            top: 110px;
-            right: -55%;
+            top: 75px;
+            right: -60%;
         }
 
         @include media('<=tablet') {
-            top: 5px;
-            left: auto;
-            right: 5%;
+            top: 50px;
+            right: 10%;
         }
 
         @include media('<=phone-lg') {
             top: 135px;
-            left: auto;
+            right: 5%;
+        }
+
+        @include media('<=phone') {
             right: 40%;
         }
 
@@ -71,19 +82,27 @@
             object-fit: contain;
 
             @include media('>=widescreen-lg') {
+                width: 750px;
+            }
+
+            @include media('<=widescreen-lg') {
+                width: 750px;
+            }
+
+            @include media('<=widescreen') {
                 width: 550px;
             }
 
             @include media('<=desktop') {
-                width: 300px;
+                width: 450px;
             }
 
             @include media('<=tablet') {
-                width: 250px;
+                width: 400px;
             }
 
             @include media('<=phone-lg') {
-                width: 200px;
+                width: 280px;
             }
         }
     }
