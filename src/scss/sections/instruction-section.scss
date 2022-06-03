@@ -28,17 +28,29 @@
     &__point {
         display: grid;
         gap: 2rem;
-       
+       justify-items: flex-start;
         min-width: 100%;
 
         &.point1 {
             grid-template-columns: 1fr 1fr 1fr;
+
+            @include media("<=widescreen") {
+                grid-template-columns: 1fr;
+            }
         }
         &.point2 {
             grid-template-columns: 1fr 1fr;
+
+            @include media("<=widescreen") {
+                grid-template-columns: 1fr;
+            }
         }
         &.point3 {
             grid-template-columns: 1fr 1fr;
+
+            @include media("<=widescreen") {
+                grid-template-columns: 1fr;
+            }
         }
     }
 
@@ -52,7 +64,11 @@
     &__block {
         display: grid;
         grid-template-columns: min-content 1fr;
-        
+
+        @include media("<=phone") {
+            grid-template-columns: 1fr;
+            row-gap: 3rem;
+        }
 
         svg {
             position: absolute;
@@ -65,6 +81,14 @@
             display: block;
             height: 100px;
             object-fit: contain;
+        }
+    }
+
+    .scheme-image {
+        width: 100%; 
+
+        @include media("<=widescreen") {
+            width: 400px; 
         }
     }
 

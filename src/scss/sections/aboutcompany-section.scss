@@ -106,7 +106,6 @@
         
         @include media("<=desktop") {
             grid-template-columns: 1fr 1fr;
-            
         }
 
         @include media("<=tablet") {
