@@ -9,6 +9,8 @@ module.exports = {
 
     './node_modules/fancybox/fancybox.min.js',
 
+    './node_modules/intl-tel-input/build/js/intlTelInput.min.js',
+
     //select choices
     //'./node_modules/choices.js/public/assets/scripts/choices.min.js',
 

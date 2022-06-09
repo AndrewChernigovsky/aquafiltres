@@ -1,0 +1,100 @@
+.iti__flag {background-image: url("../images/icons/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../images/icons/flags@2x.png");}
+}
+
+.form-call {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem;
+  background: rgb(12,3,95);
+  background: linear-gradient(45deg, rgba(12,3,95,1) 0%, rgba(4,54,175,1) 100%);
+  padding: 2rem;
+  text-align: center;
+  line-height: 2;
+  border-radius: 10px;
+  margin-top: 1rem;
+  outline: 2px solid $basicblue;
+  border: 2px solid $white;
+  min-height: 300px;
+  align-content: center;
+  display: block;
+
+  .form-call-wrap {
+    border: 1px solid $white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+
+    h3, p {
+      color:  $white;
+    }
+  }
+
+  &__inner {
+
+    form {
+      display: grid;
+      gap: 1rem;
+      text-align: left;
+      color: $basicblue;
+      min-width: 100%;
+
+      input,
+      input::placeholder {
+        min-height: 40px;
+        font-family: $primary-font;
+        font-family: 400;
+        font-size: 1.6rem;
+        color: $basicblue;
+      }
+
+      label {
+        color:  $white;
+      }
+
+      input [type="tel"] {
+        color: $black;
+        width: 100%;
+      }
+    }
+
+    button[type="submit"] {
+      min-width: 100%;
+      min-height: 20px;
+      border: 1px solid;
+      font-size: 1.5rem;
+      font-family: 'Aqum';
+      background: rgb(12,3,95);
+      background: linear-gradient(45deg, rgba(12,3,95,1) 0%, rgba(4,54,175,1) 100%);
+      padding: 0.4rem;
+      color: $white;
+      text-align: center;
+      line-height: 2;
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-top: 1rem;
+      outline: 2px solid $basicblue;
+      border: 2px solid $white;
+      transition-property: background;
+      transition-duration: .5s;
+
+      -webkit-box-shadow: -2px -2px 31px 15px rgba(255, 255, 255, 0.18);
+      -moz-box-shadow: -2px -2px 31px 15px rgba(255, 255, 255, 0.18);
+      box-shadow: -2px -2px 31px 15px rgba(255, 255, 255, 0.18);
+
+      &:hover {
+        background: linear-gradient(45deg, rgba(4,54,175,1) 100%, rgba(12,3,95,1) 0%);
+      }
+    }
+  }
+
+}
+
+.iti--separate-dial-code input[type='tel'] {
+  min-width: 100%;
+}

@@ -46,6 +46,7 @@
     "gulp-uglify": "^3.0.2",
     "htmlhint-stylish": "^1.0.3",
     "imagemin-webp": "^6.0.0",
+    "intl-tel-input": "^17.0.16",
     "path": "^0.12.7",
     "vinyl-source-stream": "^2.0.0"
   },
