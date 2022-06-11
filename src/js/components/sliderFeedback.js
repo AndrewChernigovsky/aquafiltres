@@ -6,7 +6,7 @@ const swiperSliderFeedback = (() => {
       loop: true,
       centeredSlides: true,
       autoplay: {
-        delay: 300000,
+        delay: 10000,
         disableOnInteraction: false,
       },
       centerInsufficientSlides: true,
@@ -18,6 +18,10 @@ const swiperSliderFeedback = (() => {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   
