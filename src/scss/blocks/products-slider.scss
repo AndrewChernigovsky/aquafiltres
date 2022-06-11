@@ -24,12 +24,16 @@
         &.swiper-zoom-container {
             width: 360px;
 
-            @include media("<=tablet") {
-                width: 70%;
+            @include media("<=phone-lg") {
+                width: 100%;
             }
 
             img {
                 width: 100%;
+
+                @include media("<=tablet") {
+                    width: 100%;
+                }
             }
         }
     }
@@ -97,6 +101,10 @@
 
 .products-slider-main {
     max-width: 300px;
+
+    @include media("<=tablet") {
+        max-width: 400px;
+    }
 }
 
 .products-slider-thumb {

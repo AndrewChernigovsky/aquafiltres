@@ -258,3 +258,28 @@
     }  
   }
 }
+
+.btn-ago {
+  position: fixed;
+  z-index: 12;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  top: 2rem;
+
+  &:hover {
+    svg {
+      opacity: 0.8;
+    }
+  }
+
+  svg {
+    fill: $basicblue5;
+  }
+}
+
+.bnt-up {
+  bottom: 2rem;
+  right: 2rem;
+  top: auto;
+}
