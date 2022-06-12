@@ -67,5 +67,9 @@ import scrollSmooth from './components/scroll-smooth';
         });
       },
     });
+    var cityPhone = document.querySelector('.iti__selected-dial-code');
+    var cityPhoneCode = cityPhone.textContent;
+    var inputValue = input.value;
+    inputValue = inputValue.toString() + cityPhoneCode.toString();
   });
 })(jQuery);
