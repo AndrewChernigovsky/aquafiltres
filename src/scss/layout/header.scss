@@ -18,6 +18,16 @@
       display: flex;
       min-width: 100%;
       justify-content: space-between;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    @include media('<=tablet') {
+      display: flex;
+      min-width: 100%;
+      justify-content: space-between;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   }
 }
