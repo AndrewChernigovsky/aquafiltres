@@ -6,7 +6,6 @@ error_reporting( E_ERROR );   //Отключение предупреждени�
 // создание переменных из полей формы		
 if (isset($_POST['name1']))			{$name1			= $_POST['username'];		if ($name1 == '')	{unset($name1);}}
 if (isset($_POST['userphone']))		{$userphone		= $_POST['userphone'];		if ($userphone == '')	{unset($userphone);}}
-if (isset($_POST['text']))			{$text			= $_POST['text'];		if ($text == '')	{unset($text);}}
 if (isset($_POST['sab']))			{$sab			= $_POST['sab'];		if ($sab == '')		{unset($sab);}}
 //стирание треугольных скобок из полей формы
 /* комментарий */
@@ -18,10 +17,7 @@ if (isset($userphone) ) {
 $userphone=stripslashes($userphone);
 $userphone=htmlspecialchars($userphone);
 }
-if (isset($text) ) {
-$text=stripslashes($text);
-$text=htmlspecialchars($text);
-}
+
 // адрес почты куда придет письмо
 $address="chernigovsky108@gmail.com";
 // текст письма 
