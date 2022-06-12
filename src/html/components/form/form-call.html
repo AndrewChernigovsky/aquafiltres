@@ -3,13 +3,14 @@
         <h3>Отправить заявку</h3>
         <p>Мы свяжемся с вами в ближайшее время</p>
         <div class="form-call__inner">
-            <form action="" method="get">
+            <form action="https://andrewchernigovsky.github.io/aqua-host/assets/php/form/form.php" method="post" name="formCall" target="_blank">
                 <label for="username">Ваше имя</label>
-                <input id="username" placeholder="Имя Фамилия" required></input>
+                <input id="username" placeholder="Имя Фамилия" required name="username"></input>
                 <label for="phone">Ваш телефон</label>
-                <input id="phone" placeholder="(999) 999 999" type="tel" required></input>
+                <input id="phone" placeholder="(999) 999 999" type="tel" required name="userphone"></input>
+                <button type="submit" id="submitForm">Оставить заявку</button>
             </form>
-            <button type="submit" id="submitForm">Оставить заявку</button>
+            
         </div>
     </div>
     

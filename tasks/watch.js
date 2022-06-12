@@ -17,6 +17,8 @@ module.exports = function (options) {
 
     gulp.watch(`./${options.src}/icon-svg/*`, gulp.series(options.tasks.svgSprite));
 
+    gulp.watch(`./${options.src}/php/**/*`, gulp.series(options.tasks.copyFolders));
+
     gulp
       .watch(`./${options.src}/images/**/*.+(${options.imageExtensions})`)
       .on('unlink', (path) => {
