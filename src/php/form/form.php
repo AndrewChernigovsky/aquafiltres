@@ -19,6 +19,9 @@ $userphone=htmlspecialchars($userphone);
 
 // адрес почты куда придет письмо
 $address="chernigovsky108@gmail.com";
+$note_text="
+Имя клиента: $username
+Телефон клиента: $userphone"
 
 // сообщение после отправки формы
 if (isset($username)  &&  isset ($sab) ) {
