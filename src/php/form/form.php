@@ -1,7 +1,6 @@
 
 <meta charset="utf-8"> 
 <?php
-$urok="Урок 22";
 error_reporting( E_ERROR );   //Отключение предупреждений и нотайсов (warning и notice) на сайте
 // создание переменных из полей формы		
 if (isset($_POST['username']))			{$username			= $_POST['username'];		if ($username == '')	{unset($username);}}
@@ -20,14 +19,9 @@ $userphone=htmlspecialchars($userphone);
 
 // адрес почты куда придет письмо
 $address="chernigovsky108@gmail.com";
-// текст письма 
-$note_text="Тема : $urok \r\nИмя : $username \r\n Email : $userphone \r\n Дополнительная информация : $text";
 
-if (isset($username)  &&  isset ($sab) ) {
-mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
 // сообщение после отправки формы
-    
-echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $userphone</b>.</p>";
+if (isset($username)  &&  isset ($sab) ) {
+echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам перезвонят в течении 2 часов <b style='color:red;'> $userphone</b>.</p>";
 }
-
 ?>
