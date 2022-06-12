@@ -22,6 +22,6 @@ $address="chernigovsky108@gmail.com";
 
 // сообщение после отправки формы
 if (isset($username)  &&  isset ($sab) ) {
-echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам перезвонят в течении 2 часов <b style='color:red;'> $userphone</b>.</p>";
+echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$username</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам перезвонят в течении 2 часов на номер<b style='color:red;'> $userphone</b>.</p>";
 }
 ?>
