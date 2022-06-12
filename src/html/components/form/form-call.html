@@ -3,11 +3,12 @@
         <h3>Отправить заявку</h3>
         <p>Мы свяжемся с вами в ближайшее время</p>
         <div class="form-call__inner">
-            <form action="https://izosimov-andrew.ru/assets/php/form/form.php" method="post" name="formCall" target="_blank">
+            <form action="https://izosimov-andrew.ru/assets/php/form/form.php" method="post" name="formCall" target="_blank" id="formCall1">
                 <label for="username">Ваше имя</label>
                 <input id="username" placeholder="Имя Фамилия" required name="username"></input>
                 <label for="phone">Ваш телефон</label>
                 <input id="phone" placeholder="(999) 999 999" type="tel" required name="userphone"></input>
+                <input id="phoneHidden" type="hidden" name="full-phone">
                 <input type="submit" id="submitForm" name="sab" value="оставить заявку"></input>
             </form>
             

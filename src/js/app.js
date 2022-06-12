@@ -58,8 +58,13 @@ import scrollSmooth from './components/scroll-smooth';
       singleDialCode: true,
       allowDropdown: true,
       separateDialCode: true,
+      preferredCountries: ["kg","ru","kz" ],
       utilsScript: "components/utils.js",
       initialCountry: "auto",
+      hiddenInput: "full_phone",
+      utilsScript: "components/utils.js?1638200991544" ,
+      autoPlaceholder: true,
+      autoFormat: true,
       geoIpLookup: function(success, failure) {
         $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
           var countryCode = (resp && resp.country) ? resp.country : "kg";
@@ -67,9 +72,11 @@ import scrollSmooth from './components/scroll-smooth';
         });
       },
     });
-    var cityPhone = document.querySelector('.iti__selected-dial-code');
-    var cityPhoneCode = cityPhone.textContent;
-    var inputValue = input.value;
-    inputValue = inputValue.toString() + cityPhoneCode.toString();
+
+    var formCall1 = document.querySelector('#formCall1');
+    formCall1.submit(function() {
+      $("#phoneHidden").val($("phone").intlTelInput("getNumber"))
+      console.log($("#phoneHidden").val)
+    });
   });
 })(jQuery);
