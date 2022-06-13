@@ -54,15 +54,17 @@ import scrollSmooth from './components/scroll-smooth';
       },
     });
     var input = document.querySelector("#phone");
-    window.intlTelInput(input, {
+    var output = document.querySelector("input[name='full']");
+    var iti = window.intlTelInput(input, {
       singleDialCode: true,
       allowDropdown: true,
       separateDialCode: true,
+      formatOnDisplay: true,
+      hiddenInput: "full",
       preferredCountries: ["kg","ru","kz" ],
-      utilsScript: "components/utils.js",
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/js/intlTelInput.min.js",
       initialCountry: "auto",
-      hiddenInput: "full_phone",
-      utilsScript: "components/utils.js?1638200991544" ,
+      nationalMode: true,
       autoPlaceholder: true,
       autoFormat: true,
       geoIpLookup: function(success, failure) {
@@ -73,10 +75,18 @@ import scrollSmooth from './components/scroll-smooth';
       },
     });
 
-    var formCall1 = document.querySelector('#formCall1');
+    var handleChange = function() {
+      var text = iti.getNumber(intlTelInputUtils.numberFormat.E164);
+      input.val = text + input.val()
+    };
+ 
+    input.addEventListener('change', handleChange);
+    input.addEventListener('keyup', handleChange);
+
     formCall1.submit(function() {
-      $("#phoneHidden").val($("phone").intlTelInput("getNumber"))
-      console.log($("#phoneHidden").val)
+     
     });
+
+   
   });
 })(jQuery);
