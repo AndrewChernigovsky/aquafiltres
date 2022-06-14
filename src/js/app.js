@@ -54,7 +54,6 @@ import scrollSmooth from './components/scroll-smooth';
       },
     });
     var input = document.querySelector("#phone");
-    var output = document.querySelector("input[name='full']");
     var iti = window.intlTelInput(input, {
       singleDialCode: true,
       allowDropdown: true,
@@ -62,7 +61,7 @@ import scrollSmooth from './components/scroll-smooth';
       formatOnDisplay: true,
       hiddenInput: "full",
       preferredCountries: ["kg","ru","kz" ],
-      utilsScript: "../../src/js/components/utils.js",
+      utilsScript: "utils.js",
       initialCountry: "auto",
       nationalMode: true,
       autoPlaceholder: true,
