@@ -6,7 +6,7 @@ const swiperSlider = (() => {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 500000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     preloadImages: false,
@@ -24,20 +24,6 @@ const swiperSlider = (() => {
     observer: true,
     observeSlideChildren: true,
     observeParents: true,
-
-    // on: {
-    //   slideChange(swiper) {
-    //     const slides = swiper.slides;
-    //     const activeSlideIndex = swiper.activeIndex;
-    //     const activeSlideNode = slides[activeSlideIndex];
-    //     const videoSrc = activeSlideNode.dataset.videoSrc;
-    //     const bindedTextSliders = Array.from(document.querySelectorAll(".swiper-main__slide"));
-
-    //     const foundText = bindedTextSliders.find(video => video.dataset.aciveSlider === videoSrc);
-    //     bindedTextSliders.forEach(video => video.removeAttribute("src"));
-    //     foundText.attr("src");
-    //   }
-    // }
   });
 
   const init = () => {};

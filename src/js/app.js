@@ -62,7 +62,7 @@ import scrollSmooth from './components/scroll-smooth';
       formatOnDisplay: true,
       hiddenInput: "full",
       preferredCountries: ["kg","ru","kz" ],
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/js/intlTelInput.min.js",
+      utilsScript: "../../src/js/components/utils.js",
       initialCountry: "auto",
       nationalMode: true,
       autoPlaceholder: true,
@@ -75,18 +75,14 @@ import scrollSmooth from './components/scroll-smooth';
       },
     });
 
-    var handleChange = function() {
-      var text = iti.getNumber(intlTelInputUtils.numberFormat.E164);
-      input.val = text + input.val()
-    };
- 
-    input.addEventListener('change', handleChange);
-    input.addEventListener('keyup', handleChange);
+    let fullNumber = input.intlTelInput("getNumber");
 
-    formCall1.submit(function() {
-     
-    });
+    console.log(fullNumber)
 
-   
+    $('#menuFormCall').click(function(){
+      $('body').removeClass('overflow');
+      $('nav').removeClass('active');
+      $('.js-burger-open').removeClass('active');
+    })
   });
 })(jQuery);
