@@ -289,15 +289,5 @@
 }
 
 .mb-call {
-  display: none;
-  @include media('<=desktop') {
-    display: flex;
-  }  
-}
-
-.ds-call {
-  display: none;
-  @include media('>=desktop') {
-    display: flex;
-  }  
+  display: flex;
 }
