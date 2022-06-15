@@ -14,6 +14,10 @@ const swiperSliderQuality = (() => {
         type: 'bullets',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       breakpoints: {
         1024: {
           slidesPerView: 4,
