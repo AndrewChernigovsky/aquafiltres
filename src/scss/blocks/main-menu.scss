@@ -8,8 +8,10 @@
     @include media("<=desktop") {
       display: grid;
       overflow-y: scroll;
-      min-width: 100%;
+      min-width: 100vw;
+      justify-content: center;
       height: 100vh;
+      padding-bottom: 4rem;
 
       .logo {
         margin-bottom: 55px;
@@ -29,7 +31,7 @@
       position: relative;
       color: $basicblue5;
       text-decoration: none;
-      line-height: 24px;
+      // line-height: 24px;
     }
     a:before,
     a:after,
@@ -120,10 +122,6 @@
     display: none;
     opacity: 0;
     transition: 0.5s ease;
-  }
-
-  &__nav-company-list-wrapper {
-    margin-top: -80px;
   }
 
   &__nav-company-link {

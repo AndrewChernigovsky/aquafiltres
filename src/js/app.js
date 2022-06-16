@@ -53,34 +53,6 @@ import scrollSmooth from './components/scroll-smooth';
         swiper: galleryThumbs,
       },
     });
-    let input = document.querySelector("#phone");
-    let inputHidden = document.querySelector("#phoneHidden");
-    let form = document.getElementsByTagName("form");
-
-    let iti = window.intlTelInput(input, {
-      singleDialCode: true,
-      allowDropdown: true,
-      separateDialCode: true,
-      formatOnDisplay: true,
-      hiddenInput: "full",
-      preferredCountries: ["kg","ru","kz" ],
-      utilsScript: "utils.js",
-      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
-      initialCountry: "auto",
-      nationalMode: true,
-      autoPlaceholder: true,
-      autoFormat: true,
-      geoIpLookup: function(success, failure) {
-        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-          let countryCode = (resp && resp.country) ? resp.country : "kg";
-          success(countryCode);
-        });
-      },
-    });
-
-    form.addEventListener('submit', function() {
-      input.value = input.intlTelInput("getNumber");
-    })
 
     $('#menuFormCall').click(function(){
       $('body').removeClass('overflow');
