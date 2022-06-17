@@ -145,3 +145,19 @@
 .swiper-feedback-title {
     text-align: center;
 }
+
+.feedback-mb {
+    display: block; 
+
+    @include media('>=desktop') {
+        display: none; 
+    }  
+}
+
+.feedback-ds {
+    display: none; 
+
+    @include media('>=desktop') {
+        display: block; 
+    }  
+}

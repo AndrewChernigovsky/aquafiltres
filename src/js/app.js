@@ -65,27 +65,6 @@ import tabs from './components/tabs';
       scrollTop: $(el).offset().top}, 1000);
       return false;
       });
-    
-      // $('.fancybox-trigger').click(function(e){
-      //   e.preventDefault();
-      //   var thisTarget = $(this).data('index');
-      //   $.fancybox.open({
-      //     src: "#lightbox",
-      //     type: 'inline',
-      //     opts: {
-      //       toolbar: false,
-      //       defaultType: 'inline',
-      //       autoFocus: true,
-      //       touch: false,
-      //       afterLoad: function() {
-      //         mySwiper.init();
-      //         mySwiper.slideTo(thisTarget - 1)
-      //         $('quality-slider__image').find('img').each(function(){
-      //           this.pause();
-      //         })
-      //       }
-      //     }
-      //   })
-      // })
+  
   });
 })(jQuery);
