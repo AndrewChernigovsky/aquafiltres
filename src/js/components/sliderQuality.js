@@ -28,9 +28,9 @@ const swiperSliderQuality = (() => {
         320: {
           slidesPerView: 1,
         },
-      }
+      },   
     });
-  
+
     const init = () => {};
   
     return {

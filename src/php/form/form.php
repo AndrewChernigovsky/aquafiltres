@@ -26,7 +26,7 @@ $headers = 'From: aqulife@example.com' . "\r\n" .
     'Reply-To: aqulife@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-var_dump(mail('elfyz2016@gmail.com', 'Регистрация заявки - Aqualife', $message, $headers));
+var_dump(mail('whatsapp://send?phone=+79532322112', 'Регистрация заявки - Aqualife', $message, $headers));
 echo "<div style='max-width:1024px; margin:0 auto; padding:0 20px; text-align: center;'>
 <p style='color:green;'>Уважаемый(ая) <b style='color:red; font-size:24px'>$username</b> Ваше письмо отправленно успешно. Спасибо. <br>Вам перезвонят в течении 2 часов на номер<b style='color:red;'><span style='letter-spacing: 2px;'> $userphone</span></b>.</p>
 </div>";

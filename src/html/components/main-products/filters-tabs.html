@@ -1,21 +1,21 @@
 <div class="tabs js-tabs products container">
     <ul class="tabs__header products__header">
-        <li data-tab="tab-one" class="products__tabs-btn tabs__btn active">Фильтры для дома и офиса</li>
-        <li data-tab="tab-two" class="products__tabs-btn tabs__btn">Полупромышленные Фильтры</li>
-        <li data-tab="tab-three" class="products__tabs-btn tabs__btn">Катриджи для фильтров</li>
-        <li data-tab="tab-forth" class="products__tabs-btn tabs__btn">Запасные детали</li>
+        <li data-tab="tab-one" class="products__tabs-btn tabs__btn active" id="tab1">Фильтры для дома и офиса</li>
+        <li data-tab="tab-two" class="products__tabs-btn tabs__btn" id="tab2">Полупромышленные Фильтры</li>
+        <li data-tab="tab-three" class="products__tabs-btn tabs__btn" id="tab3">Катриджи для фильтров</li>
+        <li data-tab="tab-forth" class="products__tabs-btn tabs__btn" id="tab4">Запасные детали</li>
     </ul>
 
-    <div class="products__tabs tabs__content active" data-content="tab-one">
+    <div class="products__tabs tabs__content active" data-content="tab-one" id="tab111">
         @@include('../blocks/products-list/products-list.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-two">
+    <div class="products__tabs tabs__content" data-content="tab-two" id="tab222">
         @@include('../blocks/products-list/products-list2.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-three">
+    <div class="products__tabs tabs__content" data-content="tab-three" id="tab333">
         @@include('../blocks/products-list/products-list3.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-forth">
+    <div class="products__tabs tabs__content" data-content="tab-forth" id="tab444">
         @@include('../blocks/products-list/products-list4.html')
     </div>
 </div>

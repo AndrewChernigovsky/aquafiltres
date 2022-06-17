@@ -10,12 +10,12 @@ import swiperSliderStock from './components/sliderStock';
 import swiperSliderQuality from './components/sliderQuality';
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
-import scrollSmooth from './components/scroll-smooth';
 
 (($) => {
   // When DOM is ready
   $(() => {
     //const accordions = new Accordion();
+    tabs.init();
     $.fancybox.open($('.gallery'));
     burgerMenu.init();
     swiperSlider.init();
@@ -23,8 +23,6 @@ import scrollSmooth from './components/scroll-smooth';
     swiperSliderStock.init();
     swiperSliderQuality.init();
     const accordions = new Accordion();
-    tabs.init();
-    scrollSmooth.init();
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       loop: false,
       freeMode: true,
@@ -59,5 +57,35 @@ import scrollSmooth from './components/scroll-smooth';
       $('nav').removeClass('active');
       $('.js-burger-open').removeClass('active');
     })
+
+    $('.js-smooth-scroll').click(function(){
+      var el = $(this).attr('href');
+      el = el.replace(/[^\#]*/, ''); //вытаскиваем id из ссылки
+      $('body,html').animate({
+      scrollTop: $(el).offset().top}, 1000);
+      return false;
+      });
+    
+      $('.fancybox-trigger').click(function(e){
+        e.preventDefault();
+        var thisTarget = $(this).data('index');
+        $.fancybox.open({
+          src: "#lightbox",
+          type: 'inline',
+          opts: {
+            toolbar: false,
+            defaultType: 'inline',
+            autoFocus: true,
+            touch: false,
+            afterLoad: function() {
+              mySwiper.init();
+              mySwiper.slideTo(thisTarget - 1)
+              $('quality-slider__image').find('img').each(function(){
+                this.pause();
+              })
+            }
+          }
+        })
+      })
   });
 })(jQuery);

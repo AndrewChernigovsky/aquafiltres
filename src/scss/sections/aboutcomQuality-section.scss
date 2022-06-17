@@ -43,7 +43,6 @@
                 display: block;
 
                 @include media("<=tablet") {
-                    height: 350px;
                     object-fit: contain;
                 }
             }
@@ -97,3 +96,8 @@
 .quality-slider-title {
     text-align: center;
 }
+
+#lightbox {
+    display: none;
+}
+  
