@@ -83,18 +83,18 @@
     width: 100px;
     display: flex;
     align-items: center;
+
+}
+.aboutcomQuality-section__wrapper {
+    position: relative;
 }
 
 .quality-slider-main {
     max-width: 100%;
-    position: relative;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    min-width: 100%;
+    overflow: hidden;
 }
 
 .quality-slider-title {
     text-align: center;
 }
-
-  

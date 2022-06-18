@@ -267,6 +267,10 @@
   cursor: pointer;
   top: 2rem;
 
+  @include media('<=desktop') {
+     display: none;
+  }  
+
   &:hover {
     svg {
       opacity: 0.8;
@@ -289,6 +293,10 @@
   display: flex;
   align-items: center;
   border: 1px solid $basicblue5;
+
+  @include media('<=desktop') {
+    display: flex;
+  }    
 
   @include media('<=tablet') {
     bottom: 4rem;

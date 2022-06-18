@@ -1,44 +1,43 @@
-// .tabs {
-//   &__header {
-//     display: flex;
-//     justify-content: center;
-//   }
+.tabs {
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
 
-//   &__btn {
-//     color: #000;
-//     padding: 4px;
-//     border: 1px solid #ccc;
-//     border-bottom: none;
-//     transition: $base-transition;
-//     font-size: 20px;
-//     cursor: pointer;
+  &__btn {
+    color: #000;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    transition: $base-transition;
+    font-size: 20px;
+    cursor: pointer;
 
-//     &:hover {
-//       background-color: #ccc;
-//     }
+    &:hover {
+      background-color: #ccc;
+    }
 
-//     & + & {
-//       margin-left: 10px;
-//     }
+    & + & {
+      margin-left: 10px;
+    }
 
-//     &.active {
-//       background-color: $basicblue5;
-//       color:  $white;
-//     }
-//   }
+    &.active {
+      background-color: $basicblue5;
+      color:  $white;
+    }
+  }
 
-//   &__content {
-//     display: none;
-//     padding: 16px;
-//     // border: 1px solid #ccc;
-//     font-size: 16px;
-//     transition: $base-transition;
+  &__content {
+    display: none;
+    padding: 16px;
+    font-size: 16px;
+    transition: $base-transition;
 
-//     &.active {
-//       display: block;
-//     }
-//   }
-// }
+    &.active {
+      display: block;
+    }
+  }
+}
 
 .products {
   &__header {
@@ -46,6 +45,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
 
+    @include media("<=widescreen") {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.5rem;
+    }
     @include media("<=desktop") {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -63,8 +67,12 @@
     font-size: 1.4rem;
     padding: 10px;
     color: $basicblue5;
+    opacity: 1;
+
     &:hover {
-            background-color: #ccc;
+            background-color: $basicblue5;
+            color: $white;
+            opacity: 0.5;
       }
   
       & + & {
@@ -80,11 +88,18 @@
   }
 }
 
-.tabs {
+.tabs1 {
   padding: 50px;
+  cursor: pointer;
+  justify-content: center;
 }
 
-.tab {
+.tabs1-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab1 {
   padding: 10px;
   display: flex;
   align-items: center;
@@ -96,9 +111,9 @@
   white-space: nowrap;
 }
 
-.wrapper .active { 
+.wrapperProducts-tabs .active { 
   background-color: $basicblue5;
   color:  $white;
 }
-.tab_item { display: none; }
-.tab_item:first-child { display: block; }
+.tab1_item { display: none; }
+.tab1_item:first-child { display: block; }

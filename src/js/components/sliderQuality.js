@@ -2,7 +2,7 @@ const swiperSliderQuality = (() => {
     const accountantInit = new Swiper('.quality-slider', {
       spaceBetween: 20,
       speed: 800,
-      loop: true,
+      loop: false,
       autoplay: {
         delay: 10000,
         disableOnInteraction: false,

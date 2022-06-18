@@ -9,18 +9,19 @@ import swiperSliderFeedback from './components/sliderFeedback';
 import swiperSliderStock from './components/sliderStock';
 import swiperSliderQuality from './components/sliderQuality';
 import burgerMenu from './components/burger-menu';
+import tabs from './components/tabs';
 
-$(".wrapper .tab").click(function() {
-  $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-  $(".tab_item").hide().eq($(this).index()).fadeIn()
-}).eq(0).addClass("active");
+
 
 (($) => {
   // When DOM is ready
   $(() => {
     //const accordions = new Accordion();
 
-  
+    $(".wrapperProducts-tabs .tab1").click(function() {
+      $(".wrapperProducts-tabs .tab1").removeClass("active").eq($(this).index()).addClass("active");
+      $(".tab1_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
 
     $.fancybox.open($('.gallery'));
     burgerMenu.init();
@@ -29,6 +30,7 @@ $(".wrapper .tab").click(function() {
     swiperSliderStock.init();
     swiperSliderQuality.init();
     const accordions = new Accordion();
+    tabs.init();
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       loop: false,
       freeMode: true,
