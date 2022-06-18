@@ -1,47 +1,51 @@
-.tabs {
-  &__header {
-    display: flex;
-    justify-content: center;
-  }
+// .tabs {
+//   &__header {
+//     display: flex;
+//     justify-content: center;
+//   }
 
-  &__btn {
-    color: #000;
-    padding: 4px;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    transition: $base-transition;
-    font-size: 20px;
-    cursor: pointer;
+//   &__btn {
+//     color: #000;
+//     padding: 4px;
+//     border: 1px solid #ccc;
+//     border-bottom: none;
+//     transition: $base-transition;
+//     font-size: 20px;
+//     cursor: pointer;
 
-    &:hover {
-      background-color: #ccc;
-    }
+//     &:hover {
+//       background-color: #ccc;
+//     }
 
-    & + & {
-      margin-left: 10px;
-    }
+//     & + & {
+//       margin-left: 10px;
+//     }
 
-    &.active {
-      background-color: $basicblue5;
-      color:  $white;
-    }
-  }
+//     &.active {
+//       background-color: $basicblue5;
+//       color:  $white;
+//     }
+//   }
 
-  &__content {
-    display: none;
-    padding: 16px;
-    // border: 1px solid #ccc;
-    font-size: 16px;
-    transition: $base-transition;
+//   &__content {
+//     display: none;
+//     padding: 16px;
+//     // border: 1px solid #ccc;
+//     font-size: 16px;
+//     transition: $base-transition;
 
-    &.active {
-      display: block;
-    }
-  }
-}
+//     &.active {
+//       display: block;
+//     }
+//   }
+// }
 
 .products {
   &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+
     @include media("<=desktop") {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -59,7 +63,14 @@
     font-size: 1.4rem;
     padding: 10px;
     color: $basicblue5;
-
+    &:hover {
+            background-color: #ccc;
+      }
+  
+      & + & {
+        margin-left: 10px;
+      }
+  
     @include media("<=desktop") {
 
       & + & {
@@ -68,3 +79,26 @@
     }
   }
 }
+
+.tabs {
+  padding: 50px;
+}
+
+.tab {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  white-space: nowrap;
+}
+
+.wrapper .active { 
+  background-color: $basicblue5;
+  color:  $white;
+}
+.tab_item { display: none; }
+.tab_item:first-child { display: block; }

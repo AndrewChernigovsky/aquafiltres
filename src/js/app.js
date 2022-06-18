@@ -9,13 +9,19 @@ import swiperSliderFeedback from './components/sliderFeedback';
 import swiperSliderStock from './components/sliderStock';
 import swiperSliderQuality from './components/sliderQuality';
 import burgerMenu from './components/burger-menu';
-import tabs from './components/tabs';
+
+$(".wrapper .tab").click(function() {
+  $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 (($) => {
   // When DOM is ready
   $(() => {
     //const accordions = new Accordion();
-    tabs.init();
+
+  
+
     $.fancybox.open($('.gallery'));
     burgerMenu.init();
     swiperSlider.init();
@@ -68,3 +74,4 @@ import tabs from './components/tabs';
   
   });
 })(jQuery);
+
