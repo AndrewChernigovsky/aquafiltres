@@ -113,9 +113,15 @@
   white-space: nowrap;
 }
 
-.wrapperProducts-tabs .active { 
+.tabs1 .active { 
   background-color: $basicblue5;
   color:  $white;
 }
+
 .tab1_item { display: none; }
 .tab1_item:first-child { display: block; }
+
+.tabs1 .active.tabActive {
+  background-color: $white;
+  color:  $basicblue5;
+}
