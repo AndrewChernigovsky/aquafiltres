@@ -67,6 +67,10 @@
     @include media(">=desktop") {
       display: none;
     }
+
+    @include media("<=desktop") {
+      padding-bottom: 0;
+    }
   }
 
   .o-1 {
@@ -105,6 +109,10 @@
       @include media(">=desktop") {
         display: none;
       }
+
+      @include media("<=desktop") {
+        padding-bottom: 0;
+      }
     }
 
     .menu__nav-company-list {
@@ -127,6 +135,10 @@
 
     .social {
       margin-bottom: 10px;
+
+      @include media("<=desktop") {
+        margin-bottom: 130px;
+      }
     }
   }
 
@@ -144,6 +156,7 @@
 
     @include media("<=desktop") {
       flex-direction: column;
+      line-height: 1;
     }
   }
 
