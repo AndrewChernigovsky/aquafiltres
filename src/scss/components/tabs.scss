@@ -70,9 +70,11 @@
     opacity: 1;
 
     &:hover {
-            background-color: $basicblue5;
-            color: $white;
-            opacity: 0.5;
+      @include media(">=desktop") {
+        background-color: $basicblue5;
+        color: $white;
+        opacity: 0.5;
+      }
       }
   
       & + & {

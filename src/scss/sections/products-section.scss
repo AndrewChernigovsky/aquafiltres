@@ -222,13 +222,14 @@
                     &::after {
                         content: '';
                         display: block;
-                        width: 15px;
-                        height: 15px;
                         background-color: $basicgreen1;
                         border-radius: 50%;
                         position: absolute;
-                        right: -20px;
                         top: 1px;
+                        width: 10px;
+                        height: 10px;
+                        right: -15px;
+                        top: 0px;
                     }
                 }
             }
@@ -257,13 +258,14 @@
                     &::after {
                         content: '';
                         display: block;
-                        width: 15px;
-                        height: 15px;
                         background-color: $basicblue4;
                         border-radius: 50%;
                         position: absolute;
-                        right: -30px;
-                        top: 2px;
+                        top: 1px;
+                        width: 10px;
+                        height: 10px;
+                        right: -15px;
+                        top: 0px;
                     }
                 }
             }
