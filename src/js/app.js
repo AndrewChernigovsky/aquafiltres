@@ -83,10 +83,10 @@ import tabs from './components/tabs';
 
 let urlCurrentAdress = window.location.href;
 
-let urlCurrentAdressTab1 = 'http://localhost:8080/index.html#tab1';
-let urlCurrentAdressTab2 = 'http://localhost:8080/index.html#tab2';
-let urlCurrentAdressTab3 = 'http://localhost:8080/index.html#tab3';
-let urlCurrentAdressTab4 = 'http://localhost:8080/index.html#tab4';
+let urlCurrentAdressTab1 = 'https://aqualife.kg/index.html#tab1';
+let urlCurrentAdressTab2 = 'https://aqualife.kg/index.html#tab2';
+let urlCurrentAdressTab3 = 'https://aqualife.kg/index.html#tab3';
+let urlCurrentAdressTab4 = 'https://aqualife.kg/index.html#tab4';
 
 let tab1 = document.getElementById('tab1');
 let tab2 = document.getElementById('tab2');
