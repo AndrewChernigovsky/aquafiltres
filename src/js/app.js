@@ -18,7 +18,7 @@ import tabs from './components/tabs';
 
     $('.wrapperProducts-tabs .tab1')
       .click(function () {
-        $('.wrapperProducts-tabs .tab1').removeClass('active').eq($(this).index()).addClass('active');
+        $('.wrapperProducts-tabs .tab1').removeClass('active tabActive').eq($(this).index()).addClass('active');
         $('.tab1_item').hide().eq($(this).index()).fadeIn();
       })
     .eq(0)
@@ -98,13 +98,15 @@ let tab22 = document.getElementById('tab22');
 let tab33 = document.getElementById('tab33');
 let tab44 = document.getElementById('tab44');
 
-let tab1Array = document.querySelectorAll('tab1');
-let tab1ItemsArray = document.querySelectorAll('tab1_item');
-
 if (urlCurrentAdress === urlCurrentAdressTab2) {
-  tab1.classList.add('tabActive');
-  tab11.classList.remove('active');
-  tab11.style.display = 'none';
+  if(tab1.classList.contains('active')) {
+    tab1.classList.remove('tabActive');
+  } else {
+    tab1.classList.add('tabActive');
+  }
+
+  // tab11.classList.remove('active');
+  // tab11.style.display = 'none';
 
   tab2.classList.add('active');
   tab22.classList.add('active');

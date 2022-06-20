@@ -76,17 +76,6 @@
         opacity: 0.5;
       }
       }
-  
-      & + & {
-        margin-left: 10px;
-      }
-  
-    @include media("<=desktop") {
-
-      & + & {
-        margin-left: 0;
-      }
-    }
   }
 }
 
