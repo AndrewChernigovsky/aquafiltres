@@ -25,6 +25,11 @@
 
   &__nav-item {
     position: relative;
+    
+    @include media("<=desktop") {
+      margin-bottom: 10px;
+    }
+    
     a,
     a > span {
       position: relative;
@@ -130,7 +135,7 @@
 
 .osd221 {
   @include media("<=desktop") {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-top: 20px;
   }
 }
@@ -138,5 +143,12 @@
 .menu__inner {
   @include media("<=desktop") {
     margin-bottom: 20px;
+  }
+}
+
+.menu__nav-company-list-wrapper {
+  @include media("<=desktop") {
+    display: grid;
+    gap: 10px;
   }
 }
